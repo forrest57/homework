@@ -46,14 +46,20 @@
 </template>
 <script>
 import RenderedBox from "./components/RenderedBox.vue";
+const frenchFlagUrl = new URL ('./models/frenchFlag.gltf',import.meta.url).href
+const germanFlagUrl = new URL ('./models/germanFlag.gltf?raw',import.meta.url).href
+const italianFlagUrl= new URL ('./models/italianFlag.gltf?raw',import.meta.url).href
+const britainFlagUrl= new URL('./models/britainFlag.gltf?raw',import.meta.url).href
+const spainFlagUrl= new URL ('./models/spainFlag.gltf?raw',import.meta.url).href
+
 export default {
   data() {
     return {
-      frenchFlag: "src/models/frenchFlag.gltf",
-      italianFlag: "src/models/italianFlag.gltf",
-      germanFlag: "src/models/germanFlag.gltf",
-      britainFlag: "src/models/britainFlag.gltf",
-      spainFlag: "src/models/spainFlag.gltf",
+      frenchFlag: frenchFlagUrl,
+      italianFlag: italianFlagUrl,
+      germanFlag: germanFlagUrl, 
+      britainFlag: britainFlagUrl, 
+      spainFlag: spainFlagUrl 
     };
   },
   components: {
